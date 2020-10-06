@@ -13,6 +13,13 @@ padding:0;
 @media (min-width: 320px) {
   #bottom, #top {
     display: none;}
+} 
+
+@media print{
+html{
+width: 210mm;
+height: 297mm;
+}
 }
 
 
@@ -63,7 +70,7 @@ header{
 	align-content: center;
 	font-family: 'Roboto', sans-serif;
 	color: white;
-	height:8%;
+	height:7%;
 }
 
 #entete{
@@ -112,7 +119,7 @@ h4{
 	color: #D12E50 ;
 	font-size:2vw;
 	font-weight: bold;
-	margin : 1em 0 0.5em 0;
+	margin : 0.5em 0 0.5em 0;
 }
 
 h5{
@@ -120,7 +127,7 @@ h5{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.5vw;
 	font-weight: bold;
-	margin: 1em 0 0.5em 0em;
+	margin: 0.5em 0 0.5em 0em;
 }
 
 h6{
@@ -150,11 +157,11 @@ h6{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
+	align-content: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1.3vw;
-	line-height: 0.1em;
+	font-size: 1vw;
+	/*line-height: 0.1em;*/
 	background: #BDBDB2;
-	margin: 0.5em 0 1em 0em;
 }
 
 .gauche{
@@ -173,7 +180,7 @@ h6{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3vw;
-	line-height: 0.5em;
+	line-height: 0.2em;
 }
 
 #outils{
@@ -184,7 +191,7 @@ h6{
 	align-items: center;
 	align-content: space-between;
 	font-size: 1.3vw;
-	line-height: 2em;
+	line-height: 1.7em;
 }
 
 #niveau{
@@ -199,7 +206,7 @@ progress{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width:7vw;
-    height: 2.5vh;
+    height: 2vh;
     padding: 0 0 0 0;
     background: #333; 
     background: -webkit-linear-gradient(#2d2d2d,#444);
@@ -207,14 +214,14 @@ progress{
     background:      -o-linear-gradient(#2d2d2d,#444);
     background:         linear-gradient(#2d2d2d,#444);
     border: 0.2em solid rgba(209,46,80,2);
-    border-radius: 0.5em;
+    border-radius: 0.2em;
     box-shadow: 0 0.1em 0 rgba(209,46,80,2);   
 }
 
 #langues{
 	width : 100%;
 	font-size: 1.3vw;
-	line-height: 3em;
+	line-height: 1.5em;
 }
 
 #compétences{
@@ -227,7 +234,6 @@ progress{
 	font-size: 1.3vw;
 	padding: 0.5em 0em 0.5em 0;
 	margin-left: 0.5em;
-	font-size: 2.5vh;
 }
 
 span.progress{
@@ -247,11 +253,14 @@ span.interest{
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3vw;
-	line-height: 0.5em;
+	line-height: 0em;
 }
 
 #interet > p{
-	line-height: 2em;
+	display : flex;
+	flex-direction: column;
+	margin: 0.2em 0 0.2em 0;
+	line-height: 1.5em;
 	text-align: center;
 }
 
@@ -261,18 +270,24 @@ span.interest{
 
 #interet{
 	display: flex;
+	flex-direction: column;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	font-size:1.3vw;
-	line-height: 1.5em;
 }
+
+#interet >h4{
+	font-size: 2vw;
+	line-height: 1.5em;
+	margin: 0.2em 0 0.2em 0;
+}
+
 .centre{
 	display:flex;
 	border-right: 0.5vh solid #D12E50;
-	margin-top: 1vh;
+	margin-top: 0.5vh;
 	margin-bottom: 1vh;
 }
-
 
 .droite{
 	width:65%;
@@ -287,7 +302,6 @@ span.interest{
 	line-height: 1em;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3vw;
-	padding: 0.5em 0em 0.5em 0;
 	margin-left: 0.5em;
 }
 
@@ -326,17 +340,16 @@ span.interest{
 	display:flex;
 	flex-direction: row;
 	width: 100%;
-	line-height: 1em;
+	line-height: 0.5em;
 	text-align: left;
 	font-size: 2vw;
+	margin-top: 0.7em;
 }
 
 #formation > h5{
 	display: flex;
-	line-height: 0.5em;
 	text-align: left;
-	margin-left: 0;
-	margin-top: 1.5em;
+	margin: 0 0 0 0;
 	font-size: 1.3vw;
 }
 ul, li{
@@ -345,11 +358,10 @@ ul, li{
 
 
 #expe > h4{
-	line-height: 1em;
+	line-height: 0.5em;
 	text-align: left;
 	margin-left: 0;
-	margin-top: 4vh;
-	margin-bottom: 0.5vh;
+	margin-top: 0.7em;
 }
 
 #expe > p{
@@ -364,10 +376,13 @@ ul, li{
 	margin-left: 0;
 	line-height: 1.5em;
 	margin-bottom: 0;
+	margin-top: 0.5em;
 	font-family: 'Architects Daughter', sans-serif;
 }
 ul, li{
 	line-height: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 
